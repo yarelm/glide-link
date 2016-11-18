@@ -15,7 +15,7 @@ These scripts were created by [@jbarefoot](https://github.com/jbarefoot). This r
 Clone the repo, and run:
 
 ```
-ln -s ./glide-* /usr/local/bin
+cp -f ./glide-* /usr/local/bin
 ```
 
 ## Usage
