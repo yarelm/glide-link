@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  (Bash Scripts) Link local Glide packages 🎉
+  Link local <a href="https://github.com/Masterminds/glide" target="_blank">Glide</a> packages 🎉
 </p>
 
 ## Important
