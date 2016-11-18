@@ -10,6 +10,14 @@
 
 These scripts were created by [@jbarefoot](https://github.com/jbarefoot). This repo was created by [@revett](https://github.com/revett) to help share the scripts with [Vidsy](http://vidsy.co/) engineers.
 
+## Setup
+
+Clone the repo, and run:
+
+```
+ln -s ./glide-* /usr/local/bin
+```
+
 ## Usage
 
 In the root of your Go project. Link a local package with:
