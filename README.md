@@ -27,3 +27,8 @@ glide-unlink github.com/vidsy/kmsconfig
 ## Explanation
 
 Read this [comment](https://github.com/Masterminds/glide/issues/548#issuecomment-257388512) to this [issue](https://github.com/Masterminds/glide/issues/548).
+
+## Fixes
+
+- https://github.com/Masterminds/glide/issues/608
+- https://github.com/Masterminds/glide/issues/548
