@@ -1,13 +1,14 @@
 #!/bin/bash
-# glide-link
-# Link a dependent Go package to the current package.
-# Expects one argument, the go import path for the package, e.g. github.com/organization/repository
-# Created by https://github.com/jbarefoot
+# ---
+# Usage: glide-link <package>
+# Description: Link a dependent Go package to the current package.
+# Author: https://github.com/jbarefoot
+# ---
 
 BACKUP_SUFFIX=_glide-link_bak
 
 if [ -z "$1" ] ; then
-  echo "1 argument required, the go import path, e.g. github.com/organization/repository; $# arguments provided"
+  echo "1 argument required, the go package import path, e.g. github.com/organization/repository; $# arguments provided."
   exit 1
 fi
 
@@ -16,17 +17,17 @@ REL_VENDOR_PATH=vendor/$1
 REL_VENDOR_BACKUP_PATH=$REL_VENDOR_PATH$BACKUP_SUFFIX
 
 if [ $ABS_DEPENDENCY_PATH == `pwd` ] ; then
-  echo "Cannot link a package to itself"
+  echo "Cannot link a package to itself."
   exit 1
 fi
 
 #  If the dependent package is already linked, or if it doesn't exist in both GOPATH and the vendor dir, fail fast
 if [ -e $REL_VENDOR_BACKUP_PATH ] ; then
-  echo "Nothing to do: $REL_VENDOR_BACKUP_PATH already exists, meaning $1 is already linked"
+  echo "Nothing to do: $REL_VENDOR_BACKUP_PATH already exists, meaning $1 is already linked."
   exit 1
 fi
 if [ ! -e $ABS_DEPENDENCY_PATH ] ; then
-  echo "No dependent package in GOPATH: $ABS_DEPENDENCY_PATH does not exist, meaning $1 is not on the GOPATH"
+  echo "No dependent package in GOPATH: $ABS_DEPENDENCY_PATH does not exist, meaning $1 is not on the GOPATH."
   exit 1
 fi
 if [ ! -e $REL_VENDOR_PATH ] ; then

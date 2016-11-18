@@ -1,13 +1,14 @@
 #!/bin/bash
-# glide-unlink
-# Un-link a dependent Go package from the current package.
-# Expects one argument, the go import path for the package, e.g. github.com/organization/repository
-# Created by https://github.com/jbarefoot
+# ---
+# Usage: glide-unlink <package>
+# Description: Un-link a dependent Go package from the current package.
+# Author: https://github.com/jbarefoot
+# ---
 
 BACKUP_SUFFIX=_glide-link_bak
 
 if [ -z "$1" ] ; then
-  echo "1 argument required, the go import path, e.g. github.com/organization/repository; $# arguments provided"
+  echo "1 argument required, the go package import path, e.g. github.com/organization/repository; $# arguments provided."
   exit 1
 fi
 

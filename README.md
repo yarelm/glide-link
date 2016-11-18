@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Link local <a href="https://github.com/Masterminds/glide" target="_blank">Glide</a> packages 🎉
+  Link a dependent Go package to the current package, works with <a href="https://github.com/Masterminds/glide" target="_blank">Glide</a> 🎉
 </p>
 
 ## Important
