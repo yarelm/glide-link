@@ -49,3 +49,4 @@ mv $REL_VENDOR_PATH $REL_VENDOR_BACKUP_PATH
 
 ln -s $ABS_DEPENDENCY_PATH $REL_VENDOR_PATH
 ls -la $REL_VENDOR_PATH
+touch `pwd`/`basename $1`.softlinked
